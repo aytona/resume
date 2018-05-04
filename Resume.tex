@@ -1,0 +1,133 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Christopher Aytona
+% Forked from: Sourabh Bajaj
+% License: MIT
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage[inline]{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathtools}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[pdftex, hidelinks]{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{0.9in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{0.9in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.975\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}\textbf{\href{https://aytona.github.com}{\Large Christopher Aytona}} & Email : \href{mailto:christopher.aytona@gmail.com}{christopher.aytona@gmail.com}\\
+	\href{https://aytona.github.com}{https://aytona.github.com} & Mobile : +1-(289)-200-6079\\
+	\textsl{Software Developer} & \textsl{Toronto, ON Canada}\\
+	\end{tabular*}
+\section{Experience}
+\resumeSubHeadingListStart
+	\resumeSubheading{Game Programmer}{Toronto, ON}{Transhumanoid Productions}{2016 - 2017}
+	\resumeItemListStart
+		\resumeItem{User Interface}
+		{First-person UI development using C\# with Unity}
+		\resumeItem{Git}{Assisted in project version management using Git}
+		\resumeItem{Scrum}{Weekly sprints with project manager and lead programmer to keep development on pace}
+	\resumeItemListEnd
+\resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+	\resumeSubheading{Programmer Intern}{Toronto, ON}{Ruckus Games}{2015 - 2016}
+	\resumeItemListStart
+		\resumeItem{Mobile Developer}{Responsible for developing a mobile game for iOS and Android}
+		\resumeItem{Git}{Project version manager using Git and hosted on GitHub}
+		\resumeItem{Unity}{Game development using Unity game engine and C\# programming language}
+	\resumeItemListEnd
+\resumeSubHeadingListEnd
+\section{Education}
+\resumeSubHeadingListStart
+	\resumeSubheading{Sheridan College}{Oakville, ON}{Honours Bachelor in Computer Science; GPA: 3.53}{2021}
+	\resumeSubheading{George Brown College}{Toronto, ON}{Advanced Diploma in Game Programming; GPA: 3.6}{2017}
+	\resumeItemListStart
+		\resumeItem{Accomplishments}{Graduate with Honours, Dean's List, Student Representative, Student Leadership Academy, IGDA-GBC Chair of Student Representatives}
+	\resumeItemListEnd
+\resumeSubHeadingListEnd
+\section{Projects}
+\resumeSubHeadingListStart
+	\resumeSubheading{Pocket Battle}{2017}{Swift}{\href{https://github.com/aytona/PocketBattle}{github.com/aytona/PocketBattle}}
+	\resumeItemListStart
+		\resumeItem{Mobile Development}{Game app inspired by PokemonGo for iOS}
+		\resumeItem{Multi-Touch}{Multi-touch functionality implemented using multi-threading}
+	\resumeItemListEnd
+	\resumeSubheading{OpenGL Rendering}{2017}{C++}{\href{https://github.com/aytona/OpenGLRendering}{github.com/aytona/OpenGLRendering}}
+	\resumeItemListStart
+		\resumeItem{OpenGL Library}{Uses OpenGL API to render 3D objects}
+		\resumeItem{3D-Math}{Object calculations using vector math}
+	\resumeItemListEnd
+	\resumeSubheading{Endless Runner}{2016}{C\#}{\href{https://github.com/aytona/YogurtEndlessRunner}{github.com/aytona/YogurtEndlessRunner}}
+	\resumeItemListStart
+		\resumeItem{Mobile Development}{Game app developed for iOS and Android}
+		\resumeItem{Resource Pooling}{Implemented object pooling technique for more efficient resource management}
+		\resumeItem{Version Control}{Main project version manager using Git and GitHub}
+	\resumeItemListEnd
+	\resumeSubheading{Portfolio Site}{Ongoing}{JavaScript \& HTML \& CSS}{\href{https://github.com/aytona/aytona.github.io}{github.com/aytona/aytona.github.io}}
+	\resumeItemListStart
+		\resumeItem{Front-End}{Web design using Bootstrap and Font Awesome}
+		\resumeItem{Frameworks}{Other tools and frameworks used such as PDFObject and jQuery}
+	\resumeItemListEnd
+\resumeSubHeadingListEnd
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{Languages}{$\bullet$ C\# $\bullet$ C $\bullet$ Swift $\bullet$ Java $\bullet$ Python $\bullet$ JavaScript $\bullet$ HTML $\bullet$ CSS}
+\resumeSubItem{Tools}{$\bullet$ Unity $\bullet$ Unreal Engine $\bullet$ Git $\bullet$ Perforce $\bullet$ Bash $\bullet$ Windows $\bullet$ Linux $\bullet$ UNIX}
+\resumeSubItem{Frameworks}{$\bullet$ Bootstrap $\bullet$ jQuery $\bullet$ SpriteKit $\bullet$ RakNet $\bullet$ SFML $\bullet$ OpenGL $\bullet$ DirectX}
+\resumeSubHeadingListEnd
+\section{Volunteer}
+\resumeSubHeadingListStart
+\resumeSubheading{Student Volunteer}{2017}{George Brown College}{Tech @ GBC}
+\resumeSubheading{Volunteer Staff}{2017}{The Global Game Jam}{GBC Global Game Jam}
+\resumeSubheading{Volunteer Staff}{2016}{International Game Developers Association}{Eat Play Mingle}
+\resumeSubHeadingListEnd
+\end{document}
