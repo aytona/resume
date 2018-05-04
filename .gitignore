@@ -1,0 +1,5 @@
+# TexMaker
+*.aux
+*.log
+*.out
+*.synctex.gz
